@@ -28,6 +28,7 @@ public class MyBot {
                         neighbours[2] = gameMap.getLocation(x, y-1);
                         neighbours[3] = gameMap.getLocation(x-1, y);
 
+
                         for (Location neighbour : neighbours) {
                             Site nSite = neighbour.getSite();
                             if (nSite.owner != myID && nSite.strength < site.strength)
