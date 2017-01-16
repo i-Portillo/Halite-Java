@@ -10,4 +10,9 @@ public enum Direction {
         Direction[] values = values();
         return values[new Random().nextInt(values.length)];
     }
+
+    public static Direction northOrWestDirection() {
+        Direction[] values = {NORTH, WEST};
+        return values[new Random().nextInt(values.length)];
+    }
 }
